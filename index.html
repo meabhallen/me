@@ -29,8 +29,8 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
         img {
-            width: 150px;
-            border-radius: 50%;
+            width: 200px;
+            border-radius: 8px;
             margin-top: 10px;
         }
         a {
@@ -50,9 +50,10 @@
         /* Flexbox layout for text and image side by side */
         .text-with-image {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: center; /* Centers both text and image horizontally */
+            align-items: center;     /* Centers both text and image vertically */
             gap: 20px; /* Space between text and image */
+            text-align: left; /* Ensures text is left-aligned within the block */
         }
 
         /* Additional styling for the image */
@@ -60,6 +61,27 @@
             width: 200px;
             height: auto;
             border-radius: 8px;
+        }
+
+        /* Add more spacing for the text content */
+        .text-with-image div {
+            max-width: 600px; /* Limit the width of the text block */
+        }
+
+        /* Flexbox layout for contact section */
+        .contact-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* Space between image and text */
+            text-align: left;
+        }
+
+        /* Contact image specific style */
+        .contact-section img {
+            width: 150px; /* Adjust image size */
+            height: auto;
+            border-radius: 50%; /* Circular image */
         }
     </style>
 </head>
@@ -89,13 +111,18 @@
         <p>Graduate Student Instructor, Physics 141B (upper-level special topics course in condensed matter physics), UC Berkeley.</p>
         <p>Graduate Student Instructor, Physics 7A (modern physics for beginning engineers), UC Berkeley.</p>
     </section>
+    
+    <!-- Contact Section with Image on Left -->
     <section class="contact-section">
-        <h2>Contact</h2>
-        <p>Email: meabh_allen@berkeley.edu</p>
-        <a href="https://scholar.google.com/citations?user=uYfZ0qkAAAAJ&hl=en">Google Scholar</a>
-        <a href="https://linkedin.com/in/méabh-a-530b75200">LinkedIn</a>
-        <a href="https://github.com/meabhallen/">GitHub</a>
-        <a href="Meabh_Allen_CV.pdf" target="_blank">CV (up to date 04/25)</a>
+        <img src="contact-photo.jpg" alt="Contact Photo"> <!-- Replace with your image -->
+        <div>
+            <h2>Contact</h2>
+            <p>Email: meabh_allen@berkeley.edu</p>
+            <a href="https://scholar.google.com/citations?user=uYfZ0qkAAAAJ&hl=en">Google Scholar</a>
+            <a href="https://linkedin.com/in/méabh-a-530b75200">LinkedIn</a>
+            <a href="https://github.com/meabhallen/">GitHub</a>
+            <a href="Meabh_Allen_CV.pdf" target="_blank">CV (up to date 04/25)</a>
+        </div>
     </section>
 </body>
 </html>
