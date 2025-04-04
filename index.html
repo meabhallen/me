@@ -83,6 +83,27 @@
             height: auto;
             border-radius: 50%; /* Circular image */
         }
+        /* Flexbox layout for teaching section */
+        .teaching-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for images in the teaching section */
+        .teaching-section img {
+            width: 200px; /* Set size for the image */
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        /* Centered image within the Teaching and Outreach section */
+        .teaching-section img.third-image {
+            margin-top: 30px; /* Add space to make it more distinct */
+            width: 250px; /* Adjust image size */
+            height: auto;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
@@ -105,16 +126,18 @@
         <p>Y. Huang et al., “Ultrafast Measurements of Mode-Specific Deformation Potentials of Bi2Te3 and Bi2Se3,” Phys. Rev. X, 13(4), 041050 (Dec 2023).</p>
         <p>J. A. Sobota et al., “Influence of Local Symmetry on Lattice Dynamics Coupled to Topological Surface States,” Phys. Rev. B, 107, 014305 (Jan 2023).</p>
     </section>
-    <section>
-        <h2>Teaching and Outreach</h2>
-        <p>CIQC Student Representative at the <a href="https://ciqc.berkeley.edu/nsfquantumshowcase24">NSF Quantum Showcase</a>, Apr. 2024.</p>
+ <section class="teaching-section">
+        <p>CIQC Student Representative at the<a href="https://ciqc.berkeley.edu/nsfquantumshowcase24">NSF Quantum Showcase,</a>Apr. 2024.</p>
         <p>Graduate Student Instructor, Physics 141B (upper-level special topics course in condensed matter physics), UC Berkeley.</p>
         <p>Graduate Student Instructor, Physics 7A (modern physics for beginning engineers), UC Berkeley.</p>
+
+        <!-- Third Image Added -->
+        <img class="third-image" src="dc.jpg" alt="Teaching and Outreach Image">
     </section>
     
     <!-- Contact Section with Image on Left -->
     <section class="contact-section">
-        <img src="ponies.JPG" alt="Contact Photo"> <!-- Replace with your image -->
+        <img src="ponies.JPG" alt="Contact Photo"> 
         <div>
             <h2>Contact</h2>
             <p>Email: meabh_allen@berkeley.edu</p>
@@ -126,3 +149,5 @@
     </section>
 </body>
 </html>
+
+
