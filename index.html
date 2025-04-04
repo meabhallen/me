@@ -34,7 +34,7 @@
             margin-top: 10px;
         }
         a {
-            display: inline;  /* Change to inline to avoid block behavior */
+            display: inline;
             margin: 0 5px;
             color: #52796f;
             text-decoration: none;
@@ -46,15 +46,35 @@
         p {
             margin: 10px 0;
         }
+
+        /* Flexbox layout for text and image side by side */
+        .text-with-image {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px; /* Space between text and image */
+        }
+
+        /* Additional styling for the image */
+        .text-with-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
     <header>Méabh Allen</header>
-    <section>
+    
+    <!-- Section with text and image on the right side -->
+    <section class="text-with-image">
+        <div>
+            <p>Welcome to my personal webpage! Here you can learn more about my research interests.</p>
+            <p>I'm a condensed matter theory PhD candidate in Joel Moore's group at UC Berkeley. I have a B.Sc. in mathematics and physics, and an M.Sc. in quantum field theory. I'm interested in universality in non-equilibrium quantum systems. At the moment I'm using tensor networks and field theory to study novel dynamical behaviour in critical spin systems.</p>
+        </div>
         <img src="profile.jpeg" alt="Profile Picture">
-        <p>Welcome to my personal webpage! Here you can learn more about my research interests.</p>
-        <p>I'm a condensed matter theory PhD candidate in Joel Moore's group at UC Berkeley. I have a B.Sc. in mathematics and physics, and an M.Sc. in quantum field theory. I'm interested in universality in non-equilibrium quantum systems. At the moment I'm using tensor networks and field theory to study novel dynamical behaviour in critical spin systems.</p>
     </section>
+
     <section>
         <h2>Selected Publications</h2>
         <p>J. Wei, MILA, C. Wang, J. Kemp, J. Moore, N. Yao, “Shallow Global Quenches in Critical Spin Chains,” in preparation.</p>
@@ -65,11 +85,11 @@
     </section>
     <section>
         <h2>Teaching and Outreach</h2>
-        <p>CIQC Student Representative at the<a href="https://ciqc.berkeley.edu/nsfquantumshowcase24">NSF Quantum Showcase,</a>Apr. 2024.</p>
+        <p>CIQC Student Representative at the <a href="https://ciqc.berkeley.edu/nsfquantumshowcase24">NSF Quantum Showcase</a>, Apr. 2024.</p>
         <p>Graduate Student Instructor, Physics 141B (upper-level special topics course in condensed matter physics), UC Berkeley.</p>
         <p>Graduate Student Instructor, Physics 7A (modern physics for beginning engineers), UC Berkeley.</p>
     </section>
-    <section>
+    <section class="contact-section">
         <h2>Contact</h2>
         <p>Email: meabh_allen@berkeley.edu</p>
         <a href="https://scholar.google.com/citations?user=uYfZ0qkAAAAJ&hl=en">Google Scholar</a>
@@ -77,10 +97,5 @@
         <a href="https://github.com/meabhallen/">GitHub</a>
         <a href="Meabh_Allen_CV.pdf" target="_blank">CV (up to date 04/25)</a>
     </section>
-        <section>
-        <h2>Miscellaneous Fun</h2>
-        <img src="ponies.JPG" alt="Second Photo">
-    </section>
 </body>
 </html>
-
