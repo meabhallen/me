@@ -54,7 +54,6 @@
     img.profile {
       width: 200px;
       border-radius: 5px;
-      margin-top: 1rem;
     }
 
     img.teaching, .contact img {
@@ -69,6 +68,18 @@
       flex-direction: column;
     }
 
+    .side-by-side {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .side-by-side img {
+      flex-shrink: 0;
+    }
+
     .contact {
       margin-top: 2rem;
     }
@@ -79,6 +90,12 @@
 
     a {
       color: #0033cc;
+    }
+
+    @media (max-width: 600px) {
+      .side-by-side {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -94,11 +111,13 @@
   <div class="container">
     <section id="about">
       <h1>Méabh Allen</h1>
-      <div class="flex">
-        <p>I'm a condensed matter theory PhD candidate in Joel Moore's group at UC Berkeley. Recently, I've been interested in universality in non-equilibrium quantum systems. I've been using field theory and tensor networks in recent works to study novel dynamical behaviour in critical spin systems.</p>
-          <p>I'm interested in these things for their own sake, and also for their applications in quantum computing and metrology. I am the 2024 recipient of the NSF Challenge Institute for Quantum Computation (CIQC) Seed Funding. </p>
-        <p>Outside of physics, I'm a lifelong equestrian, avid gardener, graceless yogi, and bookworm.</p>
+      <div class="side-by-side">
         <img src="profile.jpeg" alt="Profile Picture" class="profile" />
+        <div>
+          <p>I'm a condensed matter theory PhD candidate in Joel Moore's group at UC Berkeley. Recently, I've been interested in universality in non-equilibrium quantum systems. I've been using field theory and tensor networks in recent works to study novel dynamical behaviour in critical spin systems.</p>
+          <p>I'm interested in these things for their own sake, and also for their applications in quantum computing and metrology. I am the 2024 recipient of the NSF Challenge Institute for Quantum Computation (CIQC) Seed Funding. </p>
+          <p>Outside of physics, I'm a lifelong equestrian, avid gardener, graceless yogi, and bookworm.</p>
+        </div>
       </div>
     </section>
 
@@ -126,15 +145,17 @@
 
     <section id="contact" class="contact">
       <h2>Contact</h2>
-      <img src="ponies.JPG" alt="Contact Photo">
-      <ul>
-        <li>Email: meabh_allen@berkeley.edu</li>
-        <li><a href="https://scholar.google.com/citations?user=uYfZ0qkAAAAJ&hl=en">Google Scholar</a></li>
-        <li><a href="https://linkedin.com/in/méabh-a-530b75200">LinkedIn</a></li>
-        <li><a href="https://github.com/meabhallen/">GitHub</a></li>
-        <li><a href="Meabh_Allen_CV.pdf" target="_blank">CV (updated Apr 2025)</a></li>
-        <li><a href="https://ciqc.berkeley.edu/">CIQC website</a></li>
-      </ul>
+      <div class="side-by-side">
+        <img src="ponies.JPG" alt="Contact Photo">
+        <ul>
+          <li>Email: meabh_allen@berkeley.edu</li>
+          <li><a href="https://scholar.google.com/citations?user=uYfZ0qkAAAAJ&hl=en">Google Scholar</a></li>
+          <li><a href="https://linkedin.com/in/méabh-a-530b75200">LinkedIn</a></li>
+          <li><a href="https://github.com/meabhallen/">GitHub</a></li>
+          <li><a href="Meabh_Allen_CV.pdf" target="_blank">CV (updated Apr 2025)</a></li>
+          <li><a href="https://ciqc.berkeley.edu/">CIQC website</a></li>
+        </ul>
+      </div>
     </section>
   </div>
 </body>
