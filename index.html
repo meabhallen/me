@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,29 +5,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Méabh Allen</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Source Code Pro', monospace;
-      background-color: #f7f9fb;
-      color: #2c3e50;
+      font-family: 'IBM Plex Mono', monospace;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+      font-size: 16px;
     }
 
     nav {
-      background-color: #2c3e50;
       padding: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
+      font-size: 0.95rem;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      background-color: white;
     }
 
     nav a {
-      color: #ecf0f1;
+      margin-right: 20px;
+      color: black;
       text-decoration: none;
-      font-weight: 600;
     }
 
     nav a:hover {
@@ -36,54 +36,49 @@
     }
 
     .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem;
+      max-width: 750px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
 
-    section {
-      margin-bottom: 3rem;
+    h1 {
+      font-weight: normal;
+      margin-bottom: 0.5rem;
     }
 
-    h1, h2 {
-      color: #34495e;
+    h2 {
+      font-size: 1.1rem;
+      margin-top: 3rem;
     }
 
     img.profile {
-      width: 280px;
-      border-radius: 10px;
-      margin: 1rem 0;
+      width: 200px;
+      border-radius: 5px;
+      margin-top: 1rem;
     }
 
-    img.teaching {
+    img.teaching, .contact img {
       width: 100%;
       max-width: 500px;
-      border-radius: 10px;
+      border-radius: 5px;
       margin-top: 1rem;
     }
 
     .flex {
       display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      align-items: center;
+      flex-direction: column;
     }
 
-    .flex img {
-      flex: 0 0 auto;
-    }
-
-    .flex div {
-      flex: 1 1 300px;
+    .contact {
+      margin-top: 2rem;
     }
 
     .contact img {
-      width: 200px;
-      border-radius: 50%;
+      max-width: 180px;
     }
 
     a {
-      color: #2980b9;
+      color: #0033cc;
     }
   </style>
 </head>
@@ -91,60 +86,61 @@
 <body>
   <nav>
     <a href="#about">About</a>
-     <a href="#publications">Publications</a>
-     <a href="#teaching">Teaching</a>
-     <a href="#contact">Contact</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#contact">Contact</a>
   </nav>
+
   <div class="container">
     <section id="about">
       <h1>Méabh Allen</h1>
       <div class="flex">
-        <div>
-          <p>Welcome to my personal webpage! Here you can learn more about my research interests.</p>
-          <p>I'm a condensed matter theory PhD candidate in Joel Moore's group at UC Berkeley. I'm interested in universality in non-equilibrium quantum systems, and have been using field theory and tensor networks in recent works to study novel dynamical behaviour in critical spin systems.</p>
-          <p>I'm interested in these things for their own sake, and also for applications in quantum computing and metrology. I am the recipient of the NSF Challenge Institute for Quantum Computation (CIQC) Seed Funding, 2024.</p>
-          <p>Outside of physics, I'm a life-long equestrian, avid gardener, graceless yogi, and book worm.</p>
-        </div>
+        <p>I'm a condensed matter theory PhD candidate in Joel Moore's group at UC Berkeley. I study universality in non-equilibrium quantum systems, using field theory and tensor networks to uncover novel dynamical behavior in critical spin systems.</p>
+        <p>I care deeply about these questions both for their fundamental value and for their applications in quantum computing and metrology. I'm a 2024 recipient of the NSF Challenge Institute for Quantum Computation (CIQC) Seed Funding.</p>
+        <p>Outside of physics, I'm a lifelong equestrian, avid gardener, graceless yogi, and bookworm.</p>
         <img src="profile.jpeg" alt="Profile Picture" class="profile" />
       </div>
     </section>
 
     <section id="publications">
       <h2>Selected Publications</h2>
-      <p>J. Wei, MILA, C. Wang, J. Kemp, J. Moore, N. Yao, “Shallow Global Quenches in Critical Spin Chains,” in preparation.</p>
-      <p>MILA and Oriana Diessel, “Novel Short-Time Universality for Critical Quenches in Non-Equilibrium Phase Transitions,” in preparation.</p>
-      <p>MILA, G. Woolls, C. Wächtler, J. Moore, “Quantum Fisher Information in a Driven-Dissipative Critical Spin Chain,” in preparation.</p>
-      <p>Y. Huang et al., “Ultrafast Measurements of Mode-Specific Deformation Potentials of Bi2Te3 and Bi2Se3,” Phys. Rev. X, 13(4), 041050 (Dec 2023).</p>
-      <p>J. A. Sobota et al., “Influence of Local Symmetry on Lattice Dynamics Coupled to Topological Surface States,” Phys. Rev. B, 107, 014305 (Jan 2023).</p>
+      <ul>
+        <li>J. Wei, MILA, C. Wang, J. Kemp, J. Moore, N. Yao, “Shallow Global Quenches in Critical Spin Chains,” in preparation.</li>
+        <li>MILA and Oriana Diessel, “Novel Short-Time Universality for Critical Quenches in Non-Equilibrium Phase Transitions,” in preparation.</li>
+        <li>MILA, G. Woolls, C. Wächtler, J. Moore, “Quantum Fisher Information in a Driven-Dissipative Critical Spin Chain,” in preparation.</li>
+        <li>Y. Huang et al., “Ultrafast Measurements of Mode-Specific Deformation Potentials of Bi2Te3 and Bi2Se3,” Phys. Rev. X, 13(4), 041050 (2023).</li>
+        <li>J. A. Sobota et al., “Influence of Local Symmetry on Lattice Dynamics Coupled to Topological Surface States,” Phys. Rev. B, 107, 014305 (2023).</li>
+      </ul>
     </section>
 
     <section id="teaching">
       <h2>Outreach and Teaching</h2>
-      <p><a href="https://ciqc.berkeley.edu/quantum-gathering">Organizing Committee</a> at the NSF Challenge Institute for Quantum Computation (CIQC), Feb. 2023 - Present.</p>
-      <p>CIQC Representative at the <a href="https://ciqc.berkeley.edu/nsfquantumshowcase24">NSF Quantum Showcase,</a> Apr. 2024.</p>
-      <p>Graduate Student Instructor, <a href="https://classes.berkeley.edu/content/2024-spring-physics-141b-001-lec-001">Physics 141B,</a> (special topics course in condensed matter physics), Jan. - May 2024.</p>
-      <p>Graduate Student Instructor, <a href="https://classes.berkeley.edu/content/2023-fall-physics-7a-002-lec-002">Physics 7A,</a> (modern physics for beginning engineers), Aug. - Dec. 2023.</p>
+      <ul>
+        <li><a href="https://ciqc.berkeley.edu/quantum-gathering">Organizing Committee</a>, NSF CIQC, Feb. 2023 - Present</li>
+        <li>CIQC Representative, <a href="https://ciqc.berkeley.edu/nsfquantumshowcase24">NSF Quantum Showcase</a>, Apr. 2024</li>
+        <li>Graduate Student Instructor, <a href="https://classes.berkeley.edu/content/2024-spring-physics-141b-001-lec-001">Physics 141B</a>, Spring 2024</li>
+        <li>Graduate Student Instructor, <a href="https://classes.berkeley.edu/content/2023-fall-physics-7a-002-lec-002">Physics 7A</a>, Fall 2023</li>
+      </ul>
       <img src="dc.jpg" alt="Teaching and Outreach Image" class="teaching" />
     </section>
 
     <section id="contact" class="contact">
       <h2>Contact</h2>
-      <div class="flex">
-        <img src="ponies.JPG" alt="Contact Photo">
-        <div>
-          <p>Email: meabh_allen@berkeley.edu</p>
-          <p><a href="https://scholar.google.com/citations?user=uYfZ0qkAAAAJ&hl=en">Google Scholar</a></p>
-          <p><a href="https://linkedin.com/in/méabh-a-530b75200">LinkedIn</a></p>
-          <p><a href="https://github.com/meabhallen/">GitHub</a></p>
-          <p><a href="Meabh_Allen_CV.pdf" target="_blank">CV (up to date 04/25)</a></p>
-          <p><a href="https://ciqc.berkeley.edu/">CIQC website</a></p>
-        </div>
-      </div>
+      <img src="ponies.JPG" alt="Contact Photo">
+      <ul>
+        <li>Email: meabh_allen@berkeley.edu</li>
+        <li><a href="https://scholar.google.com/citations?user=uYfZ0qkAAAAJ&hl=en">Google Scholar</a></li>
+        <li><a href="https://linkedin.com/in/méabh-a-530b75200">LinkedIn</a></li>
+        <li><a href="https://github.com/meabhallen/">GitHub</a></li>
+        <li><a href="Meabh_Allen_CV.pdf" target="_blank">CV (updated Apr 2025)</a></li>
+        <li><a href="https://ciqc.berkeley.edu/">CIQC website</a></li>
+      </ul>
     </section>
   </div>
 </body>
 
 </html>
+
 
 
 
