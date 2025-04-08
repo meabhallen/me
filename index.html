@@ -95,7 +95,18 @@
     a {
       color: #0033cc;
     }
+    .side-by-side-images {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
 
+.side-by-side-images img {
+  width: 220px;
+  border-radius: 5px;
+  object-fit: cover;
+}
     @media (max-width: 600px) {
       .side-by-side {
         flex-direction: column;
@@ -138,7 +149,10 @@
 
     <section id="teaching">
       <h2>Outreach and Teaching</h2>
-      <img src="20240430_Quantum_Research_Showcase_CG_0254.jpg" class="small-image" />
+      <div class="side-by-side-images">
+  <img src="20240430_Quantum_Research_Showcase_CG_0254.jpg" alt="Quantum Showcase" />
+  <img src="20240430_Quantum_Research_Showcase_CG_0267.jpg" alt="Second Image" />
+</div>
       <ul>
         <li><a href="https://ciqc.berkeley.edu/quantum-gathering">Organizing Committee</a>, NSF CIQC, 2023 - Present</li>
         <li>CIQC Delegate, <a href="https://ciqc.berkeley.edu/nsfquantumshowcase24">NSF Quantum Showcase on Capitol Hill</a>, Apr. 2024</li>
